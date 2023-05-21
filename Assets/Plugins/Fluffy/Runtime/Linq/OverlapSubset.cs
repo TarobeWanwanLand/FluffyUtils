@@ -5,7 +5,7 @@ namespace Fluffy.Linq
 {
     public static partial class LinqExtensions
     {
-        public static IEnumerable<IEnumerable<T>> Buffer<T>(this IEnumerable<T> source, int count, int skip)
+        public static IEnumerable<IEnumerable<T>> OverlapSubset<T>(this IEnumerable<T> source, int count, int skip)
         {
             if (source == null)
                 throw new ArgumentNullException(nameof(source));
@@ -14,9 +14,8 @@ namespace Fluffy.Linq
             if (skip <= 0)
                 throw new ArgumentOutOfRangeException(nameof(skip));
 
-            using var e = source.GetEnumerator();
-            
             var queue = new Queue<T>(count);
+            using var e = source.GetEnumerator();
 
             do
             {

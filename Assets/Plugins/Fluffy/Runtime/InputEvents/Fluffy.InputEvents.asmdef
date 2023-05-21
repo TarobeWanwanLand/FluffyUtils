@@ -1,0 +1,21 @@
+{
+    "name": "Fluffy.InputEvents",
+    "rootNamespace": "",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:862272fe27afcd24d86ffd325dc7a9a2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "FLUFFY_UNIRX_SUPPORT",
+        "FLUFFY_INPUT_SYSTEM_SUPPORT"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
